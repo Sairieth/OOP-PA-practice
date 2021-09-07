@@ -1,0 +1,51 @@
+Riki
+
+oop
++ starting with aggregator class (concert organizer)
++ storing lists in aggregator class
+- wrong uml syntax for concert list
++ concert is abstract when it has child classes
++ explaining aggregation vs composition
+! if you only put the arrows at the end you won’t need to spend so much time adjusting the classes to fit everything
++ Style is enum
++ good arrows (but watch out for the enum’s arrow)
++ able to change your mind and modify uml
++ enum for concert types
+- don’t store the duration and the venue in the concert, store it in the enum and store the enum in the concert
+- you don’t need the concertList as a parameter for the rainCheck method, but you would need a Concert
+- you should store the min and max values as constants in the conert
+- watch out, if you change your mind and don’t want something to be abstract, you should remove the italic
++ storing bands and concerts
+! you can have two separate lists for main bands and warmup bands, or one for all bands, both are good solutions, but watch out: don’t say you can’t solve the exercise with the one list method, you can do it if you use instanceof in the concertorganizer class to decide if a band is a main band or a warmup band
+! include the enum’s fields in the uml
+
+java 
+~ list of concerts and bands could be set to avoid duplications. You should use lists when you want duplicates or when order is important. 
++ good base package name (com.company. …)
+! these more complex uml-s can be in the pa
+! look up number variable types
+! watch out, don’t write the interface on the right side
++ initializing what you can
+! don’t forget access modifiers
+! don’t generate getter/setter that you might not need, only generate the ones you need right now. Or if you generate them all, always say it during the pa that you will delete the unused ones. It’s important to not have unused getters&setters
++++++++++ removeIf
++ clean code, writing lots of small methods instead of one huge
++ good logic with calculating profit
+- enum fields should be private too
++ not selling ticket if you reached the max capacity
+- sellTicket logic not good, you should add the ticketsPurchased to the ticketsSold, not the venue.capacity
+
+Communication
++ asking question for price type
++ good continuous narration
++ asking questions when needed
++ explaining decisions (for example why enum instead of childclasses)
+! when you make a constructor ask the mentor about it – we are product owners during the pa, ask which fields you know when creating an object, or just say what you think and ask for confirmation if the product owner agrees
+
+tech language 
+
+geekness 
++ refactoring tool
++ ctrl alt L
++ generating constructor, getter/setter
++ generating foreach loop
